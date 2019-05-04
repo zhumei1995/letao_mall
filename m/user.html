@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="asserts/mui/css/mui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" href="asserts/fontAwesome/css/font-awesome.css">
+	<script src="asserts/mui/js/mui.min.js"></script>
+	<script src="asserts/zepto/zepto.min.js"></script>
+	<script src="asserts/artTemplate/template-native.js"></script>
+	<script src="js/public.js"></script>
+	<script src="js/user.js"></script>
+	<style type="text/css">
+		.mui-table-view{
+			font-size: 14px;
+		}
+		.mui-table-view{
+			margin-top: 0!important;
+		}
+		.mui-content{
+			padding-top: 32px!important;
+		}
+
+	</style>
+
+</head>
+<body>
+	<header class="mui-bar mui-bar-nav myheader" >
+		<a class="mui-action-back mui-icon mui-icon-search mui-pull-right"></a>
+		<h1 class="mui-title">会员中心</h1>
+	</header>
+	<nav class="mui-bar mui-bar-tab footer myfooter  ">
+		<a class="mui-tab-item " href="index.html">
+			<span class="mui-icon mui-icon-home"></span>
+			<span class="mui-tab-label">首页</span>
+		</a>
+		<a class="mui-tab-item" href="category.html">
+			<span class="mui-icon mui-icon-bars"></span>
+			<span class="mui-tab-label">分类</span>
+		</a>
+		<a class="mui-tab-item" href="cart.html">
+			<span class="mui-icon fa fa-shopping-cart"></span>
+			<span class="mui-tab-label">购物车</span>
+		</a>
+		<a class="mui-tab-item mui-active" href="user.html">
+			<span class="mui-icon mui-icon-person "></span>
+			<span class="mui-tab-label">会员中心</span>
+		</a>
+	</nav>
+>
+	<div class="mui-content">
+		<ul class="mui-table-view" id="userInfoBox"></ul>
+		<ul class="mui-table-view">
+			<li class="mui-table-view-cell  ">
+				<a href="modify.html"class="mui-navigate-right updateBtn">修改密码</a>
+			</li>
+			<li class="mui-table-view-cell ">
+				<a href="cart.html" class="mui-navigate-right">我的购物车</a>
+			</li>
+			<li class="mui-table-view-cell ">
+				<a href="address.html" class="mui-navigate-right">收货地址管理</a>
+			</li>
+			<li class="mui-text-center mui-table-view-cell " >
+				<a href="index.html" class="mui-navigate-right logout">退出登录</a>
+		</li>
+		</ul>
+	</div>
+
+	<script type="text/html" id="userTpl" >
+		<li class="mui-table-view-cell mui-media">
+			<a href="#">
+			<img class="mui-media-object mui-pull-left" src="images/user.jpg">
+				<div class="mui-media-body"><%=mobile%>
+					<p class='mui-ellipsis'>账号：<%=username%></p>
+				</div>
+			</a>
+		</li>
+	</script>
+</body>
+</html>

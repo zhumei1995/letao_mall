@@ -1,0 +1,38 @@
+body{
+	background-color: #fff;
+}
+
+ul,li{
+	padding: 0;
+	margin:0;
+	list-style: none;
+}
+.mui-content{
+	background:#FFF;
+	position: relative;
+}
+
+
+.myheader{
+	background-color: #006699;
+}
+.myheader .mui-title{
+	color:#fff;
+}
+
+.myheader .mui-icon{
+	color:#fff;
+}
+
+.myfooter{
+	background-color: #006699;
+}
+
+.myfooter .mui-tab-item{
+	color:#fff;
+}
+
+.mui-bar-tab .mui-tab-item.mui-active{
+	color:darkorange;
+}
+
